@@ -1,0 +1,75 @@
+/*  main */
+/* section info */
+.info__container {
+  position: relative;
+}
+.info__project a {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  font-size: 2rem;
+  gap:0 10px;
+  animation: translatex 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes translatex {
+  0%, 100% {
+    transform: translateX(-10%);
+    -webkit-animation-timing-function: cubic-bezier(.8,0,1,1);
+    animation-timing-function: cubic-bezier(.8,0,1,1);
+  }
+  50% {
+      transform: translateX(0);
+      -webkit-animation-timing-function: cubic-bezier(0,0,.2,1);
+      animation-timing-function: cubic-bezier(0,0,.2,1);
+  }
+}
+
+.info__project svg {
+  width: 20px
+}
+.info__left {
+  height: calc(100vh - 200px);
+  gap: 30px 0;
+  justify-content: center;
+}
+.info__social {
+  display: inline-flex;
+  gap: 0 20px;
+  padding-right: 20px;
+  border-right: 2px solid rgb(158, 147, 147);
+}
+.info__social > div {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.info__social-github:hover {
+  transform: scale(1.2);
+}
+
+.info__social-github:hover a {
+  fill: #5c6bc0
+}
+
+.info__social-fb:hover {
+  transform: scale(1.2);
+}
+
+.info__social-fb:hover a {
+  fill: #0b84ed;
+}
+.info__social-gmail:hover {
+  transform: scale(1.2);
+}
+
+.info__social-gmail:hover a {
+  fill: red;
+}
+
+.info__bottom {
+  gap:0 20px
+}
