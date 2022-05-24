@@ -144,3 +144,8 @@ img {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+.header__icon-close,
+.header__icon-menu {
+  visibility: hidden;
+  display: none;
+}
